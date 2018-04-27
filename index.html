@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <body>
+  	<div id="mainContent" class="col-md-8 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0  dB mainContent-padding" style="padding-top: 0px;">
+  	<div class="markdown-area" >
+    	<textarea class="text-input" rows="6" cols="60" oninput="this.editor.update()"
+              rows="1" cols="1"># Sample Marker
+
+Below is a list of sample markers that you can test within your SDK app when the debugTestBlippsEnabled flag is set.
+
+All the BlippJS script tutorial and demo blipps work in an SDK app with the debugTestBlippsEnabled, see: [examples](https://developer.blippar.com/portal/ar-api/examples/)
+
+![Sample Image](http://www.artic.edu/aic/collections/citi/images/standard/WebLarge/WebImg_000306/234930_3666783.jpg)
+
+Shows a dynamic wave like animation of 3D boxes.</textarea>
+		<div class="preview text_side"> </div>
+    </div>
+    </div>	
+    <script src="lib/markdown.js"></script>
+    <script>
+      function Editor(markdownEditor) {
+      	this.input = markdownEditor.querySelector(".text-input");
+      	this.preview = markdownEditor.querySelector(".preview");
+        this.update = function () {
+          this.preview.innerHTML = markdown.toHTML(this.input.value);
+        };
+        this.input.editor = this;
+        this.update();
+      }
+      var allMarkDowns = document.querySelectorAll(".markdown-area");
+      for (var i=0; i<allMarkDowns.length; i++)	{
+      	new Editor(allMarkDowns[i]);
+      }
+    </script>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap.css">
+    <style>
+        @font-face {
+			font-family: "MuseoSansRounded";
+			src: url("lib/museosansrounded-500-webfont.woff2");			
+		}
+        .preview {
+        	font-family: "MuseoSansRounded";
+        }
+    </style>
+  </body>
+</html>
+
