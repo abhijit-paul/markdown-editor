@@ -89,6 +89,7 @@
     "tap": "~0.3.3"
   },
   "scripts": {
+    "prebuild": "rm -rf dist",
     "build": "NODE_ENV=production parcel build index.html --no-cache --public-url /markdown-editor",
     "test": "tap ./test/*.t.js"
   }
