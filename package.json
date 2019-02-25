@@ -7,17 +7,6 @@
     "text processing",
     "ast"
   ],
-  "maintainers": [
-    "Dominic Baggott <dominic.baggott@gmail.com> (http://evilstreak.co.uk)",
-    "Ash Berlin <ash_markdownjs@firemirror.com> (http://ashberlin.com)"
-  ],
-  "contributors": [
-    "Dominic Baggott <dominic.baggott@gmail.com> (http://evilstreak.co.uk)",
-    "Ash Berlin <ash_markdownjs@firemirror.com> (http://ashberlin.com)"
-  ],
-  "bugs": {
-    "url": "http://github.com/evilstreak/markdown-js/issues"
-  },
   "licenses": [
     {
       "type": "MIT",
@@ -26,12 +15,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/evilstreak/markdown-js.git"
+    "url": "git://github.com/abhijit-paul/markdown-editor.git"
   },
   "main": "./lib/index.js",
-  "bin": {
-    "md2html": "./bin/md2html.js"
-  },
   "dependencies": {
     "@blueprintjs/core": "^3.13.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.12",
